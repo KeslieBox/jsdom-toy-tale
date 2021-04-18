@@ -56,8 +56,7 @@ function getToy(){
 
   function likes(e) {
     e.preventDefault()
-    // let increaseLikes = parseInt(e.target.previousElementSibling.innerText) + 1
-    let increaseLikes = parseInt(document.querySelector())
+    let increaseLikes = parseInt(e.target.previousElementSibling.innerText) + 1
     
     fetch(`http://localhost:3000/toys/${e.target.id}`, {
       method: "PATCH",
